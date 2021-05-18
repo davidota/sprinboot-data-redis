@@ -4,7 +4,8 @@ import java.util.Date;
 
 import org.springframework.data.redis.core.RedisHash;
 
-@RedisHash("Session")
+
+@RedisHash(value = "App2Tb", timeToLive = 30L)
 public class UserSession {
 
     private String id;
